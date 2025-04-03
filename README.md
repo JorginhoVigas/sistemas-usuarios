@@ -1,18 +1,42 @@
-## Getting Started
+# Sistema de Usuários
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Sobre o Projeto
+Este projeto implementa um sistema de usuários em Java, utilizando herança para definir diferentes tipos de usuários: **Gerente, Vendedor e Atendente**. Cada um possui funcionalidades específicas para simular operações comuns dentro de um sistema empresarial.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- **Gerente**
+  - Gerar relatório financeiro 📊
+  - Consultar vendas 📈
+  - Alterar dados ✏️
+  - Alterar senha 🔑
+  - Realizar login e logoff 🔄
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Vendedor**
+  - Realizar vendas (incrementa a quantidade de vendas) 🛒
+  - Consultar vendas 📊
+  - Alterar dados ✏️
+  - Alterar senha 🔑
+  - Realizar login e logoff 🔄
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Atendente**
+  - Receber pagamentos (incrementa o valor em caixa) 💰
+  - Fechar o caixa 🔐
+  - Alterar dados ✏️
+  - Alterar senha 🔑
+  - Realizar login e logoff 🔄
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Regras de Implementação
+- O **Gerente** é sempre um administrador do sistema.
+- O **Vendedor** e o **Atendente** nunca são administradores.
+- O **Vendedor** pode realizar vendas e consultar seu total de vendas.
+- O **Atendente** pode receber pagamentos e fechar o caixa.
+- Todos os usuários podem realizar login, logoff, alterar seus dados e senha.
 
-## Dependency Management
+## Tecnologias Utilizadas
+- **Java**
+- **Programação Orientada a Objetos (POO)**
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Autor
+Desenvolvido por **Jorginho Vigas** 🚀
+
